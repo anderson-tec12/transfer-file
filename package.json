@@ -1,0 +1,25 @@
+{
+  "name": "transfer-files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx  src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.8",
+    "@types/ssh2-sftp-client": "9.0.3",
+    "tsup": "^8.0.2",
+    "tsx": "^4.9.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "dotenv": "16.4.5",
+    "ssh2-sftp-client": "10.0.3",
+    "zod": "3.23.6"
+  }
+}
