@@ -22,7 +22,7 @@ async function setFiles(server: Client) {
     console.log(`Listener: Uploaded ${info.source}`);
   })
 
-  await server.uploadDir('./BKP', '/home/ubuntu/build');
+  await server.uploadDir('./upload', '/home/ubuntu/build');
 
   console.log('ok')
 }
@@ -42,7 +42,7 @@ async function setFiles(server: Client) {
 
   console.log({ files })
 
-  // await getFiles(server)
+  await getFiles(server)
   await setFiles(server)
 
 })()
